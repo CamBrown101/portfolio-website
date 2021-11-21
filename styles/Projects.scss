@@ -1,0 +1,13 @@
+@import '../variables.scss';
+
+#projects-container {
+  margin-top: 3px;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  #projects {
+    // position: absolute;
+    // top: 0;
+    // margin-top: 1550px;
+  }
+}

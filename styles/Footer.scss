@@ -1,0 +1,15 @@
+@import '../variables.scss';
+
+.footer-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 1350px;
+  width: 90%;
+
+  height: 50px;
+  color: $footer-font;
+  background-color: $footer-background;
+}

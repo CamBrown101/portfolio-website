@@ -1,0 +1,26 @@
+@import "./variables";
+
+#about-container {
+  background-image: url("../public/images/headshot-blacknwhite.png");
+  background-color: rgba($color: $about-background, $alpha: 1);
+  background-position: 100% 100%;
+  background-size: 700px;
+  background-repeat: no-repeat;
+  height: 550px;
+  padding: 5%;
+  color: $about-font;
+  .name {
+    margin-top: 90px;
+    padding-bottom: 0;
+    font-size: 3.5em;
+    width: 40%;
+    line-height: 50px;
+  }
+  .about-me {
+    max-width: 45%;
+  }
+  h1,
+  h2 {
+    margin: 0;
+  }
+}

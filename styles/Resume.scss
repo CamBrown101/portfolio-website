@@ -1,0 +1,38 @@
+@import '../variables.scss';
+
+#resume-container {
+  h3 {
+    margin: 10px;
+    font-size: 2em;
+  }
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: $resume-font;
+  background-color: $resume-background;
+  height: 200px;
+  .resume-button {
+    text-decoration: none;
+    background-color: $resume-button;
+    padding: 20px 30px;
+    border-radius: 5px;
+    transition: 0.5s;
+    border: thin solid black;
+  }
+  .resume-button:visited {
+    color: $resume-font;
+  }
+  .resume-button:active {
+    color: $resume-font;
+  }
+  .resume-button:hover::before {
+    transform: scale(1.1);
+  }
+  .resume-button:hover {
+    color: $resume-font-hover;
+    text-shadow: 0 0 5px black;
+    box-shadow: 0 0 10px $resume-font-hover;
+    border: thin solid black;
+  }
+}

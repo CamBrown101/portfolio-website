@@ -1,0 +1,21 @@
+@import '../variables.scss';
+
+#home-container {
+  color: $font-color;
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 1500px;
+  min-width: 900px;
+  .home-container-inner {
+    padding-top: 30px;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  #projects {
+    margin: 0;
+  }
+  #skills {
+    margin: 0;
+    margin-top: 50px;
+  }
+}
