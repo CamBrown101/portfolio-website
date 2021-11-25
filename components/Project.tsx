@@ -1,5 +1,6 @@
-import React, { useState } from 'react';
-import './Project.scss';
+import React, { useState } from "react";
+import styles from "../styles/Project.module.scss";
+
 type Props = {
   title: string;
   image: string;
@@ -26,21 +27,36 @@ export const Project = ({
       onMouseOut={() => {
         setHover(false);
       }}
-      className="project">
-      <div className={isRight ? 'project-inner right' : 'project-inner'}>
-        <img className="screenshot" alt="This is a project" src={image} />
-        <div className="project-text">
-          <h4 className="project-title">{title}</h4>
-          <p className="project-description">{description}</p>
-          <h3 className="tech-stack-header">Tech Stack</h3>
-          <p className="tech-stack">{techstack}</p>
+      className={styles.project}
+    >
+      <div
+        className={
+          isRight
+            ? `${styles["project-inner"]} ${styles.right}`
+            : styles["project-inner"]
+        }
+      >
+        <img
+          className={styles.screenshot}
+          alt="This is a project"
+          src={image}
+        />
+        <div className={styles["project-text"]}>
+          <h4 className={styles["project-title"]}>{title}</h4>
+          <p className={styles["project-description"]}>{description}</p>
+          <h3 className={styles["tech-stack-header"]}>Tech Stack</h3>
+          <p className={styles["tech-stack"]}>{techstack}</p>
         </div>
-        <div className={hover ? 'project-buttons' : 'project-buttons hide'}>
-          <a className="link-container" href={githubLink}>
-            <i className="fab fa-github hover-icon" />
+        <div
+          className={
+            hover ? styles["project-buttons"] : styles["project-buttons hide"]
+          }
+        >
+          <a className={styles["link-container"]} href={githubLink}>
+            <i className={`fab fa-github ${styles["hover-icon"]}`} />
           </a>
-          <a className="link-container" href={projectLink}>
-            <i className="fas fa-link hover-icon" />
+          <a className={styles["link-container"]} href={projectLink}>
+            <i className={`fas fa-link ${styles["hover-icon"]}`} />
           </a>
         </div>
       </div>
